@@ -1,0 +1,14 @@
+backend:
+  name: test-repo
+
+media_folder: /static
+
+collections:
+  - name: "posts"
+    label: "Post"
+    folder: "_posts"
+    filter:
+      field: language
+      value: en
+    fields:
+      - {label: "Language", name: "language"}

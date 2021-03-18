@@ -3,9 +3,8 @@ module.exports = {
     title: "gatsby-3-static-query-issue",
   },
   plugins: [
+    "gatsby-plugin-typescript",
     "gatsby-plugin-netlify-cms",
-    "gatsby-plugin-styled-components",
-    "gatsby-plugin-mdx",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -13,6 +12,14 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "posts",
+        path: `${__dirname}/content/_posts`,
+      },
+      __key: "posts",
     },
   ],
 };
