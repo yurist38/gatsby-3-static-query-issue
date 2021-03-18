@@ -9,3 +9,9 @@ Reproduction of the issue with `useStaticQuery` in Gatsby 3 + Nelify CMS setup
 3. Go to `http://localhost:8000`, you should see a modal box with the error message `Unhandled Runtime Error`
 
 Now if you go to the `src/pages/index.ts` file and change something, after refreshing the page error should disappear (but it will be back at some point).
+
+## Tested on this setup:
+* Node.js: v14.15.0
+* NPM: v6.14.11
+* OS: Mac OS Big Sur
+* Browser: Google Chrome
